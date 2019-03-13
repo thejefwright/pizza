@@ -14,9 +14,19 @@
   text-shadow: -2px 4px 9px coral;
   margin-bottom: 0;
   text-align: center;
-  animation-duration: 2.5s;
+  animation-duration: 2s;
   animation-name: fadeIn;
 }
+.title2 {
+  position: absolute;
+  font-size: 6em;
+  font-family: 'Bilbo Swash Caps', cursive;
+  color: coral;
+  opacity: 0;
+  animation-duration: 2s;
+  animation-name: fadeOut;
+}
+
 h2 {
   color: coral;
   text-align: center;
@@ -36,8 +46,18 @@ h2 {
     top: 0;
   }
 }
-.title {
-  
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    top: 6.5em;
+  }
+  75% {
+    opacity: .4;
+  }
+  100% {
+    opacity: 0;
+    top: 2.25em;
+  }
 }
 
 @media only screen and (max-width: 730px) {

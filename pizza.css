@@ -1,3 +1,8 @@
+body {
+  animation: bodyFade 3s linear 2s;
+  animation-fill-mode: forwards;
+}
+
 .wrapper {
   height: 100vh;
   display: flex;
@@ -58,6 +63,14 @@ h2 {
   100% {
     opacity: 0;
     top: 35%;
+  }
+}
+@keyframes bodyFade {
+  from {
+    background: white;
+  }
+  to {
+    background: #313335;
   }
 }
 

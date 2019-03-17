@@ -47,6 +47,7 @@ h2 {
   0% {
     top: -100%;
     transform: scale(0.1);
+    -webkit-transform: scale(0.1);
   }
   60% {
     top: 10%;

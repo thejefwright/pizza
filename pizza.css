@@ -1,6 +1,7 @@
 body {
-  animation: bodyFade 3s linear 2s;
+  animation: bodyFade 2.5s linear 1.5s;
   animation-fill-mode: forwards;
+  /* background: #313335; */
 }
 
 .wrapper {
@@ -19,7 +20,7 @@ body {
   text-shadow: -2px 4px 9px coral;
   margin-bottom: 0;
   text-align: center;
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-name: fadeIn;
 }
 .title2 {
@@ -44,8 +45,12 @@ h2 {
 
 @keyframes fadeIn {
   0% {
+    transform: rotate(20deg);
     opacity: 0;
     top: -100%;
+  }
+  50% {
+    top: 10%;
   }
   100% {
     opacity: 1;
@@ -66,10 +71,10 @@ h2 {
   }
 }
 @keyframes bodyFade {
-  from {
-    background: white;
+  0% {
+    background: #fffffc;
   }
-  to {
+  100% {
     background: #313335;
   }
 }

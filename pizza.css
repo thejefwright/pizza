@@ -45,9 +45,10 @@ h2 {
 
 @keyframes fadeIn {
   0% {
-    transform: rotate(20deg);
     opacity: 0;
     top: -100%;
+    right: -30%;
+    transform: rotate(20deg);
   }
   50% {
     top: 10%;

@@ -48,9 +48,9 @@ h2 {
     opacity: 0;
     top: -100%;
     right: -30%;
-    transform: rotate(20deg);
+    /* transform: rotate(20deg); */
   }
-  50% {
+  60% {
     top: 10%;
   }
   100% {

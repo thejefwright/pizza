@@ -2,11 +2,21 @@ body {
   animation: bodyFade 2.5s linear 1.5s;
   animation-fill-mode: forwards;
 }
+.nav {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  padding: 0 5%;
+}
 li {
+  color: whitesmoke;
   list-style: none;
 }
+.logo {
+  animation: heartBeat 1.5s infinite 3s;
+}
 .wrapper {
-  height: 100vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -54,6 +64,25 @@ h2 {
   100% {
     top: 0;
   }
+}
+@keyframes heartBeat {
+  0%, 12.5% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.1);
+  }
+  37.5% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  62.5%, 100% {
+    transform: scale(1);
+  }
+
+
 }
 @keyframes fallIn {
   0% {

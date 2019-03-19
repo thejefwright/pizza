@@ -1,7 +1,6 @@
 body {
   animation: bodyFade 2.5s linear 1.5s;
   animation-fill-mode: forwards;
-  /* background: #313335; */
 }
 li {
   list-style: none;
@@ -38,14 +37,14 @@ h2 {
   0% {
     top: -100%;
     opacity:0;  
-    transform: rotate(10deg);
+    transform: rotate(15deg);
     transform-origin: bottom right;
   }
   85% {
     transform: rotate(0deg)
   }
   90% {
-    top: 0;
+    top: 5%;
     transform: rotate(-5deg);
     transform-origin: bottom right; 
   }
@@ -95,5 +94,15 @@ h2 {
 @media only screen and (max-width: 500px) {
   .title, .title2{
     font-size: 3.5em;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .title, .title2{
+    font-size: 3em;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .title, .title2{
+    font-size: 2.5em;
   }
 }

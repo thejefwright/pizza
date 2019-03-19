@@ -21,8 +21,9 @@ li {
   text-shadow: -2px 4px 9px coral;
   margin-bottom: 0;
   text-align: center;
-  /* animation-duration: 2s; */
-  animation: fadeIn 1s linear;
+  /* transform: rotate(-4deg); */
+  /* transform-origin: bottom right; */
+  animation: fadeIn 1.25s ease-in;
 }
 h2 {
   color: coral;
@@ -36,15 +37,37 @@ h2 {
 @keyframes fadeIn {
   0% {
     top: -100%;
-    /* transform: scale(0.1); */
+    opacity:0;  
+    transform: rotate(10deg);
+    transform-origin: bottom right;
   }
-  40% {
+  85% {
+    transform: rotate(0deg)
+  }
+  90% {
+    top: 0;
+    transform: rotate(-5deg);
+    transform-origin: bottom right; 
+  }
+  100% {
+    top: 0;
+  }
+}
+@keyframes fallIn {
+  0% {
+    top: -100%;
+  }
+  25%, 50% {
     top: -25%;
     transform: rotate(0deg)
   }
-  60% {
-    transform: rotate(-30deg);
+  60%, 80% {
+    top: -25%;
+    transform: rotate(-45deg);
     transform-origin: bottom right;
+  }
+  90% {
+    transform: rotate(-25deg);
   }
   100% {
     top: 0;

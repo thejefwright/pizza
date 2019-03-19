@@ -3,7 +3,9 @@ body {
   animation-fill-mode: forwards;
   /* background: #313335; */
 }
-
+li {
+  list-style: none;
+}
 .wrapper {
   height: 100vh;
   display: flex;
@@ -19,8 +21,8 @@ body {
   text-shadow: -2px 4px 9px coral;
   margin-bottom: 0;
   text-align: center;
-  animation-duration: 1s;
-  animation-name: fadeIn;
+  /* animation-duration: 2s; */
+  animation: fadeIn 1s linear;
 }
 h2 {
   color: coral;
@@ -34,11 +36,15 @@ h2 {
 @keyframes fadeIn {
   0% {
     top: -100%;
-    transform: scale(0.1);
-    -webkit-transform: scale(0.1);
+    /* transform: scale(0.1); */
   }
-  65% {
-    top: 10%;
+  40% {
+    top: -25%;
+    transform: rotate(0deg)
+  }
+  60% {
+    transform: rotate(-30deg);
+    transform-origin: bottom right;
   }
   100% {
     top: 0;

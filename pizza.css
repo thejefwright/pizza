@@ -5,7 +5,6 @@ body {
 .nav {
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
   padding: 0 5%;
 }
 li {
@@ -30,8 +29,6 @@ li {
   text-shadow: -2px 4px 9px coral;
   margin: 0;
   text-align: center;
-  /* transform: rotate(-4deg); */
-  /* transform-origin: bottom right; */
   animation: fadeIn 1s ease-in;
 }
 h2 {
@@ -96,26 +93,6 @@ button:hover {
   }
 
 
-}
-@keyframes fallIn {
-  0% {
-    top: -100%;
-  }
-  25%, 50% {
-    top: -25%;
-    transform: rotate(0deg)
-  }
-  60%, 80% {
-    top: -25%;
-    transform: rotate(-45deg);
-    transform-origin: bottom right;
-  }
-  90% {
-    transform: rotate(-25deg);
-  }
-  100% {
-    top: 0;
-  }
 }
 @keyframes bodyFade {
   0% {

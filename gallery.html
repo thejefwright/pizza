@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/matt.css">
+  <title>Matt Fucking Delamater!</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <h1 class="logo"><a href="index.html">Matt Delamater</a></h1>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <nav>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+      </label>
+    </header>
+  </div>
+    
+  <section class="gallery">
+    <h2>Images</h2>
+      <img src="images/1.jpg" alt="">
+      <img src="images/2.jpg" alt="">
+      <img src="images/3.jpg" alt="">
+      <img src="images/4.jpg" alt="">
+      <img src="images/5.jpg" alt="">
+      <img src="images/6.jpg" alt="">
+      <img src="images/7.jpg" alt="">
+      <img src="images/8.jpg" alt="">
+      <img src="images/9.jpg" alt="">
+      <img src="images/10.png" alt="">
+      <img src="images/11.jpg" alt="">
+      <img src="images/12.png" alt="">
+      <img src="images/13.png" alt="">
+      <img src="images/14.png" alt="">
+    </section>
+  
+
+
+    <!-- <script>
+      const gallery = document.querySelector('.gallery');
+      const overlay = document.querySelector('.overlay');
+      const overlayImage = overlay.querySelector('img');
+      const overlayClose = overlay.querySelector('.close');
+  
+      function generateHTML([h, v]) {
+        return `
+          <div class="item h${h} v${v}">
+            <img src="images/${randomNumber(8)}.jpg" || src="images/${randomNumber(6)}.jpg">
+            <div class="item__overlay">
+              <button>View →</button>
+            </div>
+          </div>
+        `;
+      }
+  
+      function randomNumber(limit) {
+        return Math.floor(Math.random() * limit) + 1;
+      }
+  
+      function handleClick(e) {
+        const src = e.currentTarget.querySelector('img').src;
+        overlayImage.src = src;
+        overlay.classList.add('open');
+      }
+  
+  
+      function close() {
+        overlay.classList.remove('open');
+      }
+  
+      const digits = Array.from({ length: 20 }, () => [randomNumber(4), randomNumber(4)]).concat([[1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1]])
+  
+      const html = digits.map(generateHTML).join('');
+      gallery.innerHTML = html;
+  
+      const items = document.querySelectorAll('.item');
+  
+      items.forEach(item => item.addEventListener('click', handleClick));
+  
+      overlayClose.addEventListener('click', close);
+  
+    </script> -->
+  </body>
+</html>

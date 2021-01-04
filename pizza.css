@@ -24,7 +24,7 @@ li {
 .title {
   position: relative;
   font-size: 6em;
-  font-family: 'Bilbo Swash Caps', cursive;
+  font-family: "Bilbo Swash Caps", cursive;
   color: white;
   text-shadow: -2px 4px 9px coral;
   margin: 0;
@@ -42,12 +42,17 @@ h2 {
   opacity: 0;
   animation: fadeIn 1s ease-in 3.5s forwards;
 }
-
+p {
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  opacity: 0;
+  animation: fadeIn 2s ease-in 5.5s forwards;
+}
 
 @keyframes dropIn {
   0% {
     top: -100vh;
-    opacity:0;  
+    opacity: 0;
     /* transform: rotate(15deg); */
     /* transform-origin: bottom right; */
   }
@@ -75,7 +80,8 @@ h2 {
   }
 }
 @keyframes heartBeat {
-  0%, 12.5% {
+  0%,
+  12.5% {
     transform: scale(1);
   }
   25% {
@@ -87,7 +93,8 @@ h2 {
   50% {
     transform: scale(1.1);
   }
-  62.5%, 100% {
+  62.5%,
+  100% {
     transform: scale(1);
   }
 }
@@ -96,37 +103,42 @@ h2 {
     background: #fffffc;
   }
   100% {
-    background: rgba(1,1,1,.7);
+    background: rgba(1, 1, 1, 0.7);
   }
 }
 
 @media only screen and (max-width: 730px) {
-  .title, .title2{
+  .title,
+  .title2 {
     font-size: 5em;
   }
 }
 @media only screen and (max-width: 600px) {
-  .title, .title2{
+  .title,
+  .title2 {
     font-size: 4em;
   }
 }
 @media only screen and (max-width: 500px) {
-  .title, .title2{
+  .title,
+  .title2 {
     font-size: 3.5em;
   }
 }
 @media only screen and (max-width: 374px) {
-  .title, .title2{
+  .title,
+  .title2 {
     font-size: 3em;
   }
 }
 @media only screen and (max-width: 320px) {
-  .title, .title2{
+  .title,
+  .title2 {
     font-size: 2.5em;
   }
 }
 .imgbox {
-  box-shadow: -6px 6px 7px rgba(1,1,1,.5);
+  box-shadow: -6px 6px 7px rgba(1, 1, 1, 0.5);
   width: 250px;
   display: flex;
   justify-content: center;
